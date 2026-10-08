@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creează-ți limonada | Jgr Limonade</title>
+    <meta
+      name="description"
+      content="Creează-ți propria limonadă Jgr: alege aromele preferate și optează pentru o rețetă cu sau fără alcool."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="custom-studio-page">
+    <header class="custom-studio-header">
+      <a href="index.html" class="brand" aria-label="Înapoi la Jgr Limonade">
+        <span class="brand-mark">J</span>
+        <span>Jgr Limonade</span>
+      </a>
+      <a class="custom-studio-back" href="index.html">← Înapoi la magazin</a>
+    </header>
+
+    <main class="custom-studio-main">
+      <section class="custom-builder-section">
+        <div class="container">
+          <div class="custom-builder-heading">
+            <p class="eyebrow">Atelierul tău Jgr</p>
+            <h1>Creează-ți limonada</h1>
+            <p>Combină aromele preferate și transformă ideea ta într-un mix răcoritor.</p>
+          </div>
+
+          <div class="custom-builder">
+            <div class="custom-builder-options">
+              <fieldset class="custom-fieldset">
+                <legend><span>01</span> Alege aromele</legend>
+                <p class="custom-hint">Alege cel puțin una. Poți combina mai multe.</p>
+                <div class="flavor-options">
+                  <label class="flavor-option"><input type="checkbox" name="customFlavor" value="Căpșună" /><span>🍓 Căpșună</span></label>
+                  <label class="flavor-option"><input type="checkbox" name="customFlavor" value="Fructe de pădure" /><span>🫐 Fructe de pădure</span></label>
+                  <label class="flavor-option"><input type="checkbox" name="customFlavor" value="Mango" /><span>🥭 Mango</span></label>
+                  <label class="flavor-option"><input type="checkbox" name="customFlavor" value="Cocos" /><span>🥥 Cocos</span></label>
+                  <label class="flavor-option"><input type="checkbox" name="customFlavor" value="Grapefruit" /><span>🍊 Grapefruit</span></label>
+                  <label class="flavor-option"><input type="checkbox" name="customFlavor" value="Lime" /><span>🍋 Lime</span></label>
+                  <label class="flavor-option"><input type="checkbox" name="customFlavor" value="Mentă" /><span>🌿 Mentă</span></label>
+                  <label class="flavor-option"><input type="checkbox" name="customFlavor" value="Ghimbir" /><span>🫚 Ghimbir</span></label>
+                  <label class="flavor-option"><input type="checkbox" name="customFlavor" value="Sirop de soc" /><span>🌼 Sirop de soc</span></label>
+                </div>
+              </fieldset>
+
+              <fieldset class="custom-fieldset alcohol-fieldset">
+                <legend><span>02</span> Cu sau fără alcool?</legend>
+                <div class="alcohol-options">
+                  <label class="alcohol-option">
+                    <input type="radio" name="customAlcohol" value="none" checked />
+                    <span>Fără alcool</span>
+                  </label>
+                  <label class="alcohol-option">
+                    <input type="radio" name="customAlcohol" value="alcohol" />
+                    <span>Cu alcool · 18+</span>
+                  </label>
+                </div>
+                <div id="customAlcoholDetails" class="custom-alcohol-details" hidden>
+                  <label class="field-label" for="customSpirit">Alege baza alcoolică</label>
+                  <select id="customSpirit" class="location-input">
+                    <option value="Vodka">Vodka</option>
+                    <option value="Gin">Gin</option>
+                    <option value="Rom">Rom</option>
+                  </select>
+                  <label class="age-confirm">
+                    <input id="customAgeConfirm" type="checkbox" />
+                    <span>Confirm că am 18 ani sau mai mult.</span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+
+            <aside class="custom-builder-summary" aria-live="polite">
+              <span class="custom-summary-icon" aria-hidden="true">🐆</span>
+              <p class="menu-category-kicker">Mixul tău Jgr</p>
+              <h2 id="customSummaryTitle">Alege prima aromă</h2>
+              <p id="customSummaryDetails" class="custom-summary-details">Limonadă fără alcool</p>
+              <div class="custom-price-line">
+                <span>Preț estimativ</span>
+                <strong id="customPrice">16.00 RON</strong>
+              </div>
+              <p class="custom-price-note">16 RON bază + 3 RON pentru fiecare aromă suplimentară; alcoolul adaugă 10 RON.</p>
+              <button id="addCustomDrink" class="custom-add-btn" type="button" disabled>Adaugă mixul în coș</button>
+              <p id="customStatus" class="custom-age-note" aria-live="polite">Băuturile cu alcool sunt disponibile exclusiv persoanelor de peste 18 ani.</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="customizer.js"></script>
+  </body>
+</html>

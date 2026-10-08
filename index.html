@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jgr Limonade | Limonade naturale și alcoolice</title>
+    <meta
+      name="description"
+      content="Jgr Limonade oferă limonade naturale, cocktail-uri fresh și băuturi creative cu un look urban și tropical."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Jgr Limonade">
+          <span class="brand-mark">J</span>
+          <span>Jgr Limonade</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navigare principală">
+          <a href="#meniu">Meniu</a>
+          <a href="#creeaza">Creează</a>
+          <a href="#arome">Arome</a>
+          <a href="#produse">Produse</a>
+          <a href="#despre">Despre</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="cart-toggle" type="button" data-cart-toggle aria-label="Deschide coșul">
+            Coș <span id="cartBadge" class="cart-badge">0</span>
+          </button>
+          <button class="nav-cta" type="button" data-cart-toggle>Comandă acum</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="home" class="page-shell">
+      <section class="hero">
+        <div class="container hero-wrap">
+          <div class="hero-copy">
+            <p class="eyebrow">Fresh • Natural • 18+</p>
+            <h1>Jgr Limonade</h1>
+            <h2>Răcorire savuroasă, cu gust de călătorie.</h2>
+            <p class="subtitle">
+              De la limonade naturale din citrice proaspete până la cocktailuri creative,
+              Jgr Limonade aduce energia tropicală direct în paharul tău.
+            </p>
+            <div class="cta-row">
+              <a class="primary-btn" href="#meniu">Vezi meniul</a>
+              <a class="secondary-btn" href="#produse">Comandă online</a>
+            </div>
+            <ul class="meta-list" aria-label="Statistici Jgr Limonade">
+              <li><strong>4.9/5</strong><span>rating</span></li>
+              <li><strong>18 min</strong><span>livrare</span></li>
+              <li><strong>100%</strong><span>fresh</span></li>
+            </ul>
+          </div>
+
+          <div class="jaguar-stage" role="img" aria-label="Jaguar și limonadă Jaguar Style">
+            <img class="jaguar-stage-image" src="assets/jgr-hero.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="meniu" class="menu-showcase">
+        <div class="container">
+          <div class="full-menu-heading">
+            <p class="eyebrow">Meniu Jgr Limonade</p>
+            <h2>Alege aroma pentru momentul tău.</h2>
+            <p>Limonade fresh, cocktailuri 18+ și gama Jaguar Style la doză.</p>
+          </div>
+
+          <div class="full-menu-grid">
+            <article class="menu-category menu-category-natural">
+              <div class="menu-category-heading">
+                <span class="menu-category-icon" aria-hidden="true">🍋</span>
+                <div>
+                  <p class="menu-category-kicker">Fresh all day</p>
+                  <h3>Limonade naturale</h3>
+                </div>
+              </div>
+              <div class="menu-entry">
+                <div><h4>Limonada Verde</h4><p>Lime, mentă și ghimbir</p></div>
+                <strong>16 RON</strong>
+              </div>
+              <div class="menu-entry">
+                <div><h4>Berry Basil</h4><p>Fructe de pădure, busuioc și lime</p></div>
+                <strong>18 RON</strong>
+              </div>
+              <div class="menu-entry">
+                <div><h4>Mango Mint</h4><p>Mango tropical, mentă și lime</p></div>
+                <strong>20 RON</strong>
+              </div>
+              <div class="menu-entry">
+                <div><h4>Cocos Limonadă</h4><p>Lămâie naturală • oferta de luni</p></div>
+                <strong>18 RON</strong>
+              </div>
+            </article>
+
+            <article class="menu-category menu-category-adult">
+              <div class="menu-category-heading">
+                <span class="menu-category-icon" aria-hidden="true">🍸</span>
+                <div>
+                  <p class="menu-category-kicker">Pentru adulți • 18+</p>
+                  <h3>Cocktailuri cu limonadă</h3>
+                </div>
+              </div>
+              <div class="menu-entry">
+                <div><h4>Citrus Sunset</h4><p>Vodka, portocală și sirop de soc</p></div>
+                <strong>29 RON</strong>
+              </div>
+              <div class="menu-entry">
+                <div><h4>Love Island</h4><p>Limonadă, sirop de soc și note citrice</p></div>
+                <strong>30 RON</strong>
+              </div>
+              <div class="menu-entry">
+                <div><h4>Bambolina Lemonade</h4><p>Căpșuni, ghimbir și limonadă</p></div>
+                <strong>35 RON</strong>
+              </div>
+              <div class="menu-entry">
+                <div><h4>Jaguar Punch</h4><p>Mură, lime și arome tropicale</p></div>
+                <strong>35 RON</strong>
+              </div>
+            </article>
+
+            <article class="menu-category menu-category-cans">
+              <div class="menu-category-heading">
+                <span class="menu-category-icon" aria-hidden="true">🐆</span>
+                <div>
+                  <p class="menu-category-kicker">Carrefour &amp; Profi</p>
+                  <h3>Jaguar Style • 500 ml</h3>
+                </div>
+              </div>
+              <div class="menu-entry">
+                <div><h4>Original</h4><p>Limonadă clasică</p></div>
+                <strong>18,50 RON <small>cu SGR</small></strong>
+              </div>
+              <div class="menu-entry">
+                <div><h4>Pink Grapefruit</h4><p>Grapefruit și rozmarin</p></div>
+                <strong>18,50 RON <small>cu SGR</small></strong>
+              </div>
+              <div class="menu-entry">
+                <div><h4>Mojito</h4><p>Lime și mentă</p></div>
+                <strong>18,50 RON <small>cu SGR</small></strong>
+              </div>
+              <div class="menu-entry">
+                <div><h4>Tropic Heat</h4><p>Maracuja și portocală</p></div>
+                <strong>18,50 RON <small>cu SGR</small></strong>
+              </div>
+              <div class="menu-entry">
+                <div><h4>Wild Berry</h4><p>Fructe de pădure</p></div>
+                <strong>18,50 RON <small>cu SGR</small></strong>
+              </div>
+              <p class="menu-retail-note">Prețul include 18 RON produs + 0,50 RON garanție SGR.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="creeaza" class="custom-builder-section">
+        <div class="container">
+          <div class="custom-builder-promo">
+            <span class="custom-promo-icon" aria-hidden="true">🍋</span>
+            <div class="custom-promo-copy">
+              <p class="eyebrow">Atelierul tău de limonadă</p>
+              <h2>Tu alegi aromele. Jaguarul face mixul.</h2>
+              <p>Intră în configuratorul Jgr și creează o rețetă exact pe gustul tău, cu sau fără alcool.</p>
+            </div>
+            <a class="custom-studio-link" href="customizer.html">
+              Creează limonada ta <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="brand-split">
+        <div class="container">
+          <div class="split-header">
+            <p class="eyebrow">Doi universuri Jgr</p>
+            <h2>Fresh ca jaguarul, dar pentru fiecare moment.</h2>
+          </div>
+
+          <div class="split-grid">
+            <article class="split-card split-card-natural">
+              <div class="jaguar-badge" aria-hidden="true">🐆</div>
+              <p class="split-kicker">Jgr Natural</p>
+              <h3>Răcorire fără alcool</h3>
+              <p>Refresh-uri naturale, citrice proaspete și fructe de sezon pentru zilele cu energie maximă.</p>
+              <button class="split-btn is-natural" type="button" data-category="natural">Vezi natural</button>
+            </article>
+
+            <article class="split-card split-card-adult">
+              <div class="jaguar-badge" aria-hidden="true">🐆</div>
+              <p class="split-kicker">Jgr 18+</p>
+              <h3>Moment premium & tropical</h3>
+              <p>Cocktail-uri creative, cu profil citric și arome de seară pentru o experiență distinctă.</p>
+              <button class="split-btn is-adult" type="button" data-category="alcoholic">Vezi 18+</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="monday-offer" aria-labelledby="mondayOfferTitle">
+        <div class="container">
+          <div class="monday-offer-card">
+            <img
+              class="monday-offer-image"
+              src="assets/cocos-limonada.png"
+              alt="Limonada Cocos cu lămâie naturală"
+            />
+            <div class="monday-offer-copy">
+              <p class="offer-label">Oferta săptămânii • doar luni</p>
+              <h2 id="mondayOfferTitle">Cocos Limonadă</h2>
+              <p>Lămâie naturală, răcoritoare și fără coloranți artificiali. Prinde oferta de luni cât e fresh!</p>
+              <div class="offer-footer">
+                <strong>18 RON</strong>
+                <span id="mondayOfferStatus" class="offer-status" aria-live="polite"></span>
+              </div>
+              <button class="offer-cta" type="button" data-category="natural">Vezi oferta în meniu</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="arome" class="flavors-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Descoperă gama</p>
+            <h2>Arome Jaguar Style</h2>
+          </div>
+
+          <div class="flavor-grid">
+            <article class="flavor-card">
+              <div class="flavor-image-wrap">
+                <img src="assets/original.png" alt="Doza Jaguar Style Original, limonadă clasică" />
+              </div>
+              <div class="flavor-copy">
+                <h3>Original</h3>
+                <p>Limonadă clasică</p>
+                <strong class="flavor-price">18,00 RON <span>+ 0,50 RON SGR</span></strong>
+                <small class="flavor-stores">Disponibilă la Carrefour și Profi</small>
+              </div>
+            </article>
+            <article class="flavor-card">
+              <div class="flavor-image-wrap">
+                <img src="assets/pink-grapefruit.png" alt="Doza Jaguar Style Pink Grapefruit cu grapefruit și rozmarin" />
+              </div>
+              <div class="flavor-copy">
+                <h3>Pink Grapefruit</h3>
+                <p>Grapefruit &amp; rozmarin</p>
+                <strong class="flavor-price">18,00 RON <span>+ 0,50 RON SGR</span></strong>
+                <small class="flavor-stores">Disponibilă la Carrefour și Profi</small>
+              </div>
+            </article>
+            <article class="flavor-card">
+              <div class="flavor-image-wrap">
+                <img src="assets/mojito.png" alt="Doza Jaguar Style Mojito cu lime și mentă" />
+              </div>
+              <div class="flavor-copy">
+                <h3>Mojito</h3>
+                <p>Lime &amp; mentă</p>
+                <strong class="flavor-price">18,00 RON <span>+ 0,50 RON SGR</span></strong>
+                <small class="flavor-stores">Disponibilă la Carrefour și Profi</small>
+              </div>
+            </article>
+            <article class="flavor-card">
+              <div class="flavor-image-wrap">
+                <img src="assets/tropic-heat.png" alt="Doza Jaguar Style Tropic Heat cu maracuja și portocală" />
+              </div>
+              <div class="flavor-copy">
+                <h3>Tropic Heat</h3>
+                <p>Maracuja &amp; portocală</p>
+                <strong class="flavor-price">18,00 RON <span>+ 0,50 RON SGR</span></strong>
+                <small class="flavor-stores">Disponibilă la Carrefour și Profi</small>
+              </div>
+            </article>
+            <article class="flavor-card">
+              <div class="flavor-image-wrap">
+                <img src="assets/wild-berry.png" alt="Doza Jaguar Style Wild Berry cu fructe de pădure" />
+              </div>
+              <div class="flavor-copy">
+                <h3>Wild Berry</h3>
+                <p>Fructe de pădure</p>
+                <strong class="flavor-price">18,00 RON <span>+ 0,50 RON SGR</span></strong>
+                <small class="flavor-stores">Disponibilă la Carrefour și Profi</small>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-slider-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Jgr din zi în seară</p>
+            <h2>Experiențe care inspiră mișcare și energie.</h2>
+          </div>
+
+          <div class="story-slider" aria-label="Slide-uri promo Jgr Limonade">
+            <button class="slider-arrow prev" type="button" aria-label="Slide anterior">‹</button>
+
+            <div class="slides-wrap">
+              <article class="story-slide active">
+                <div class="slide-media slide-one"></div>
+                <div class="slide-copy">
+                  <p class="slide-tag">Fresh Club</p>
+                  <h3>Ziua ta începe cu zing.</h3>
+                  <p>Citrice, mentă și texturi proaspete pentru un reset perfect în orice oră a zilei.</p>
+                </div>
+              </article>
+
+              <article class="story-slide">
+                <div class="slide-media slide-two"></div>
+                <div class="slide-copy">
+                  <p class="slide-tag">Sunset Ritual</p>
+                  <h3>Seara are un gust premium.</h3>
+                  <p>Prinde vibrația tropicală, cu cocktailuri echilibrate și note de fructe de pădure.</p>
+                </div>
+              </article>
+
+              <article class="story-slide">
+                <div class="slide-media slide-three"></div>
+                <div class="slide-copy">
+                  <p class="slide-tag">Jaguar Nights</p>
+                  <h3>O energie de brand, de la primul pahar.</h3>
+                  <p>Răcoare artistică, culoare intensă și momentul care te face să revii pentru următorul.</p>
+                </div>
+              </article>
+            </div>
+
+            <button class="slider-arrow next" type="button" aria-label="Slide următor">›</button>
+          </div>
+
+          <div class="slider-dots" aria-label="Navigare slide-uri">
+            <button class="slider-dot active" type="button" aria-label="Mergi la slideul 1"></button>
+            <button class="slider-dot" type="button" aria-label="Mergi la slideul 2"></button>
+            <button class="slider-dot" type="button" aria-label="Mergi la slideul 3"></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="produse" class="products">
+        <div class="container">
+          <div class="section-heading">
+            <div class="catalog-header-row">
+              <p class="eyebrow">Selecție proaspătă</p>
+              <div class="category-switcher" role="tablist" aria-label="Filtrează produse">
+                <button class="mode-btn active" type="button" data-category="all">Toate</button>
+                <button class="mode-btn" type="button" data-category="natural">Natural</button>
+                <button class="mode-btn" type="button" data-category="alcoholic">18+</button>
+              </div>
+            </div>
+            <h2 id="catalogTitle">Naturală și cu alcool, pentru orice moment.</h2>
+          </div>
+
+          <div id="productGrid" class="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="despre" class="features">
+        <div class="container">
+          <div class="section-heading narrow">
+            <p class="eyebrow">De ce noi</p>
+            <h2>Combinație de gust, culoare și energie.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon">🍋</div>
+              <h3>Naturală</h3>
+              <p>Folosim citrice proaspete, ierburi, fructe de sezon și siropuri din ingrediente reale.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">🌿</div>
+              <h3>Creative</h3>
+              <p>Rețete cu profil tropical, colorație vibrantă și niveluri de prospețime care te energizează.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">⚡</div>
+              <h3>Instant</h3>
+              <p>Din comandă până la livrare, totul este rapid, curat și făcut pentru o experiență fresh.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="cartOverlay" class="cart-overlay" aria-hidden="true"></div>
+
+    <aside class="cart-panel" aria-label="Coș de cumpărături">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow cart-eyebrow">Coșul tău</p>
+          <h3>Comandă rapid</h3>
+        </div>
+        <span id="cartCount" class="cart-count">0</span>
+        <button class="close-cart" type="button" data-cart-toggle aria-label="Închide coșul">×</button>
+      </div>
+
+      <div class="delivery-picker">
+        <button class="delivery-option active" type="button" data-delivery-method="wolt">Wolt</button>
+        <button class="delivery-option" type="button" data-delivery-method="glovo">Glovo</button>
+        <button class="delivery-option" type="button" data-delivery-method="pickup">Pickup</button>
+      </div>
+
+      <div class="checkout-fields">
+        <label class="field-label" for="customerPhone">Număr de telefon</label>
+        <input
+          id="customerPhone"
+          class="location-input"
+          type="tel"
+          placeholder="07xx xxx xxx"
+          autocomplete="tel"
+          inputmode="tel"
+          required
+        />
+
+        <div id="deliveryDetails" class="delivery-details">
+          <label class="field-label" for="deliveryAddress">Adresa de livrare</label>
+          <input
+            id="deliveryAddress"
+            class="location-input"
+            type="text"
+            placeholder="Stradă și număr, localitate"
+            autocomplete="street-address"
+          />
+
+          <label class="field-label" for="dwellingType">Tipul locuinței</label>
+          <select id="dwellingType" class="location-input">
+            <option value="">Selectează: bloc sau casă</option>
+            <option value="apartment">Bloc</option>
+            <option value="house">Casă</option>
+          </select>
+
+          <div id="apartmentDetails" class="address-subfields" hidden>
+            <label class="field-label" for="buildingNumber">Bloc</label>
+            <input id="buildingNumber" class="location-input" type="text" placeholder="Număr / literă bloc" autocomplete="address-line2" />
+            <label class="field-label" for="staircase">Scară</label>
+            <input id="staircase" class="location-input" type="text" placeholder="Scara" />
+            <div class="address-number-row">
+              <div>
+                <label class="field-label" for="floor">Etaj</label>
+                <input id="floor" class="location-input" type="text" placeholder="Etaj" />
+              </div>
+              <div>
+                <label class="field-label" for="apartmentNumber">Apartament</label>
+                <input id="apartmentNumber" class="location-input" type="text" placeholder="Nr." />
+              </div>
+            </div>
+          </div>
+
+          <div id="houseDetails" hidden>
+            <label class="field-label" for="houseDetailsInput">Detalii casă / acces</label>
+            <input id="houseDetailsInput" class="location-input" type="text" placeholder="Ex: poartă, interfon sau reper" />
+          </div>
+        </div>
+      </div>
+
+      <div id="cartList" class="cart-list" aria-live="polite"></div>
+
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="subtotal">0.00 RON</strong>
+        </div>
+        <div class="summary-row">
+          <span>Livrare</span>
+          <strong id="shipping">0.00 RON</strong>
+        </div>
+        <div class="summary-row total-row">
+          <span>Total</span>
+          <strong id="total">0.00 RON</strong>
+        </div>
+      </div>
+
+      <button class="checkout-btn" type="button" id="checkoutBtn">Finalizează comanda</button>
+    </aside>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <span class="footer-brand">Jgr Limonade</span>
+          <p>Fresh energy pentru fiecare zi.</p>
+        </div>
+        <div>
+          <span class="footer-label">Contact</span>
+          <p><a href="mailto:jgrlemonade@gmail.com">jgrlemonade@gmail.com</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
